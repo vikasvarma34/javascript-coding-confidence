@@ -581,21 +581,26 @@
 //     appointmentsTest1[2].patientId === " pat-10 ",
 // ); // true
 
-const appointments = [
-  { id: 1, status: "confirmed" },
-  { id: 2, status: "cancelled" },
-  { id: 3, status: "confirmed" },
-];
+// const appointments = [
+//   { id: 1, status: "confirmed" },
+//   { id: 2, status: "cancelled" },
+//   { id: 3, status: "confirmed" },
+// ];
 
-const firstConfirmed = appointments.find(
-  (appointment) => appointment.status === "confirmed",
-);
-// { id: 1, status: "confirmed" }
+// const firstConfirmed = appointments.find(
+//   (appointment) => appointment.status === "confirmed",
+// );
+// // { id: 1, status: "confirmed" }
 
-const lastConfirmed = appointments.findLast(
-  (appointment) => appointment.status === "confirmed",
-);
-// { id: 3, status: "confirmed" }
+// const lastConfirmed = appointments.findLast(
+//   (appointment) => appointment.status === "confirmed",
+// );
+// // { id: 3, status: "confirmed" }
 
-console.log(firstConfirmed);
-console.log(lastConfirmed);
+// console.log(firstConfirmed);
+// console.log(lastConfirmed);
+
+// Day 2 notes:
+// filter returns all matches in a new array; no matches returns [].
+// find returns the first match; no match returns undefined.
+// Weak area: normalize both stored values and input values before comparing.
